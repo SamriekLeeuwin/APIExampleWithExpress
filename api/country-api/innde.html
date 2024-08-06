@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ülke Kısaltmaları Ve Kullanıcı Api</title>
+</head>
+
+<style>
+ #searchButton{
+    align-items: center;
+    width: 75px;
+    height: 50px;
+    color: black;
+    background-color: rgba(3, 206, 251, 0.447);
+    border: 25 30px;
+    border-radius: 25px;
+    
+ }
+ #nameInput{
+    width: 100%; /* Input genişliği */
+    padding: 10px;
+    margin-bottom: 15px; /* İkinci input ile aradaki boşluk */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Border ve padding dahil genişlik */ 
+ }
+ #codeInput{
+    width: 100%; /* Input genişliği */
+    padding: 10px;
+    margin-bottom: 15px; /* İkinci input ile aradaki boşluk */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Border ve padding dahil genişlik */
+ }
+.container {
+   width: 300px; /* Container genişliği */
+   margin: 100px auto; /* Sayfanın ortasına alma */
+   padding: 20px; /* Container içindeki boşluk */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+</style>
+
+<body>
+    <div class="container">
+    <h1>Ülke Kısaltmaları ve Kullanıcı Bilgileri</h1>
+    <p id="country-list"">Ülke Kısaltmarı ve Kullanıcı Bilgileri</p>
+
+ <!-- İsim Arama -->
+ <label for="nameInput">İsim Ara:</label>
+ <input type="text" id="nameInput" placeholder="İsim girin...">
+
+ <!-- Kısaltma Arama -->
+ <label for="codeInput">Kısaltma Ara:</label>
+ <input type="text" id="codeInput" placeholder="Kısaltma girin...">
+
+
+    <button id="searchButton" >Gönder</button>
+
+    <p id="nameResult"></p>
+    <p id="codeResult"></p>
+</div>
+   <script src="scripts.js"></script>
+</body>
+</html>
